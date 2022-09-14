@@ -29,8 +29,8 @@
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
-      <id>maven-snapshots</id>
-      <name>maven-snapshots</name>
+      <id>mavenapp-snapshots</id>
+      <name>mavenapp-snapshots</name>
       <url>http://34.125.189.126:8081/repository/mavenapp-snapshots/</url>
       <layout>legacy</layout>
     </snapshotRepository>
