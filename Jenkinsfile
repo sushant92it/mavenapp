@@ -13,7 +13,7 @@ pipeline {
         }
         stage('build') {
             steps {
-               sh 'mvn -f pom.xml clean deploy'
+               sh 'mvn -f pom.xml -s settings.xml clean deploy'
             }
         
         post {
