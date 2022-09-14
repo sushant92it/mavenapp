@@ -1,0 +1,23 @@
+Lab:
+
+Create VM
+Login vm
+Install docker package
+
+  apt update
+  apt install docker.io
+  
+run jenkins container:
+
+docker run -itd -p 8080:8080 --name=jen jenkins/jenkins:lts
+
+get initial password:
+
+docker exec -it jen cat /var/jenkins_home/secrets/initialAdminPassword
+
+create a pipeline job
+  refer jenkinsfile for this repo: https://github.com/psapp1/mavenapp
+
+set maven install path in configure system 
+maven version
+  
