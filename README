@@ -23,3 +23,19 @@ maven version
   
 Lab2:
   Integrating nexus repo with Jenkins job using maven
+  create 2nd vm
+  login 2nd vm
+  install docker
+  run nexus container with docker run
+  apt update
+  apt install docker.io
+  docker run -d -p 8081:8081 --name nexus sonatype/nexus3
+  docker exec -it nexus cat /nexus-data/admin.password 
+  
+  create 2 maven hosted repos (snapshot and releases) in nexus
+  create a role in nexus
+  create user in nexus
+  
+  
+  
+  
