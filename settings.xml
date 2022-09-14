@@ -4,13 +4,13 @@
       <servers>
         <server>
           <id>mavenapp-snapshots</id>
-          <username>mavenapp-user</username>
-          <password>mavenapp-user</password>
+          <username>sushant92it</username>
+          <password>Welcome@123</password>
         </server>
         <server>
           <id>mavenapp-releases</id>
-          <username>mavenapp-user</username>
-          <password>mavenapp-user</password>
+          <username>sushant92it</username>
+          <password>Welcome@123</password>
         </server>
       </servers>
 
