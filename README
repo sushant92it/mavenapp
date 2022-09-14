@@ -1,4 +1,4 @@
-Lab:
+Lab1:
 
 Create VM
 Login vm
@@ -21,3 +21,5 @@ create a pipeline job
 set maven install path in configure system 
 maven version
   
+Lab2:
+  Integrating nexus repo with Jenkins job using maven
