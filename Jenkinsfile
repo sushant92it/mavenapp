@@ -17,7 +17,7 @@ pipeline {
         stage('build') {
             steps {
                sh 'mvn -f pom.xml -s settings.xml clean package'
-               sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=mavenapp -Dsonar.host.url=http://34.125.189.126:9000 -Dsonar.login=${SQ_CREDS}'
+               sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=mavenapp -Dsonar.host.url=http://35.193.196.4:9000/ -Dsonar.login=${SQ_CREDS}'
             }
         
         post {
