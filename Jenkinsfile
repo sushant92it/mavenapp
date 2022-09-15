@@ -5,6 +5,9 @@ pipeline {
         // Install the Maven version configured as "M3" and add it to the path.
         maven "maven-3.8.6"
     }
+    environment {
+    SQ_CREDS = credentials('sonarqube-creds')
+    }
     stages {
         stage('prep') {
             steps {
@@ -14,7 +17,7 @@ pipeline {
         stage('build') {
             steps {
                sh 'mvn -f pom.xml -s settings.xml clean package'
-               sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=mavenapp -Dsonar.host.url=http://34.125.189.126:9000 -Dsonar.login=sqp_23a485b0abf57bf4fe9ab3d99d6fec16cd2369be'
+               sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=mavenapp -Dsonar.host.url=http://34.125.189.126:9000 -Dsonar.login=${SQ_CREDS}'
             }
         
         post {
